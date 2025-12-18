@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমার ওয়েবসাইট | হোম পেজ</title>
+    <style>
+        /* CSS অংশ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* নেভিগেশন বার */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* হিরো সেকশন (ব্যানার) */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100 vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            margin-top: 60px; /* Header space */
+            min-height: 500px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* সার্ভিস সেকশন */
+        .services {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* ফুটার */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>আমার লোগো</h2>
+            <ul>
+                <li><a href="#">হোম</a></li>
+                <li><a href="#">সার্ভিস</a></li>
+                <li><a href="#">আমাদের সম্পর্কে</a></li>
+                <li><a href="#">যোগাযোগ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>আমাদের ওয়েবসাইটে স্বাগতম</h1>
+        <p>আমরা আপনার ব্যবসার জন্য সেরা ডিজিটাল সমাধান প্রদান করি।</p>
+        <a href="#" class="btn">আরো জানুন</a>
+    </section>
+
+    <section class="services">
+        <h2>আমাদের সেবাসমূহ</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>ওয়েব ডিজাইন</h3>
+                <p>আধুনিক এবং রেসপনসিভ ওয়েবসাইট তৈরি করি।</p>
+            </div>
+            <div class="service-card">
+                <h3>গ্রাফিক্স ডিজাইন</h3>
+                <p>লোগো এবং ব্র্যান্ডিং ডিজাইন সেবা।</p>
+            </div>
+            <div class="service-card">
+                <h3>ডিজিটাল মার্কেটিং</h3>
+                <p>আপনার ব্যবসাকে অনলাইনে ছড়িয়ে দিতে সাহায্য করি।</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 আমার ওয়েবসাইট। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>
+
